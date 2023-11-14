@@ -7,11 +7,25 @@
   <title>Tester</title>
 </head>
 
-<body>
-  <h1>Does this work?</h1>
-  <hello-world> </hello-world>
-  <script type="module" src="./sdk/index.js">
-  </script>
+<body class="antialiased">
+  <div style="display: block; width: 100%; height: 100px; background-color: rgb(2, 134, 235)">
+
+  </div>
+  <div class="sqHideDeliveryIfHasNoContent">
+
+    <div data-sq-container="sqln-bde8aab1-09ce-46c2-8184-d944b086ec4a"
+      data-sq-stream="bde8aab1-09ce-46c2-8184-d944b086ec4a" data-sq-sub="323a7d90-79d9-4cd0-ac65-ebf12ec742c8"
+      data-sq-template="gallery" data-sq-lang="de_de" data-sq-import-on-load="outline">
+    </div>
+    <script type="module" charset="utf-8" src="./sdk/squarelovin.min.js"></script>
+    <!-- include this to enable tracking -->
+    <script type="text/javascript">
+      window.addEventListener("sq:load", function () {
+        $sq.toogleTracker()
+      });
+    </script>
+  </div>
+
 </body>
 
 </html>
